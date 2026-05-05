@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TCB Prospect Capture Settings</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <p class="eyebrow">The Conference Board</p>
+        <h1>Prospect Capture Settings</h1>
+      </header>
+
+      <form id="settingsForm" class="settings">
+        <label>
+          <span>Apps Script Web App URL</span>
+          <input id="scriptUrl" name="scriptUrl" type="url" placeholder="https://script.google.com/macros/s/.../exec">
+        </label>
+        <label>
+          <span>Shared Secret</span>
+          <input id="sharedSecret" name="sharedSecret" type="password" autocomplete="new-password">
+        </label>
+
+        <div class="button-row">
+          <button id="saveButton" class="primary" type="submit">Save Settings</button>
+          <button id="testButton" class="secondary" type="button">Test Endpoint</button>
+        </div>
+      </form>
+
+      <div id="status" class="status" role="status"></div>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

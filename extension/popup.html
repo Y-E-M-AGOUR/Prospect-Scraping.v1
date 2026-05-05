@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TCB Prospect Capture</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <div>
+          <p class="eyebrow">The Conference Board</p>
+          <h1>Prospect Capture</h1>
+        </div>
+        <button id="optionsButton" class="icon-button" type="button" title="Settings" aria-label="Settings">...</button>
+      </header>
+
+      <div id="status" class="status" role="status">Open a LinkedIn profile and capture the prospect.</div>
+
+      <section class="actions" aria-label="Capture actions">
+        <button id="captureButton" class="secondary" type="button">Capture From Page</button>
+        <button id="appendButton" class="primary" type="button" disabled>Append To Sheet</button>
+      </section>
+
+      <form id="prospectForm" class="form">
+        <label>
+          <span>First Name</span>
+          <input id="firstName" name="firstName" autocomplete="off">
+        </label>
+        <label>
+          <span>Last Name</span>
+          <input id="lastName" name="lastName" autocomplete="off">
+        </label>
+        <label>
+          <span>Current Position Title</span>
+          <input id="currentTitle" name="currentTitle" autocomplete="off">
+        </label>
+        <label>
+          <span>Current Company</span>
+          <input id="currentCompany" name="currentCompany" autocomplete="off">
+        </label>
+        <label>
+          <span>LinkedIn URL</span>
+          <input id="linkedInUrl" name="linkedInUrl" autocomplete="off">
+        </label>
+        <label>
+          <span>Notes</span>
+          <textarea id="notes" name="notes" rows="3"></textarea>
+        </label>
+      </form>
+
+      <details id="detailsPanel" class="details">
+        <summary>Capture details</summary>
+        <pre id="captureDetails"></pre>
+      </details>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
