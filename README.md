@@ -1,4 +1,4 @@
-# TCB Prospect Capture MVP
+# Prospect Capture MVP
 
 This workspace contains a first-pass Chrome extension and Google Apps Script backend for capturing LinkedIn prospects into Google Sheets.
 
